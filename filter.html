@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+     @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* dropdownmenu */
+.fildropdown {
+  /* margin: 50px; */
+  margin-right: 95px;
+  text-align: center;
+  border-left: 1px solid rgb(207, 203, 203);
+  height: 50px;
+  margin-top: 8px;
+}
+
+.fildddForRemoveLeftLine {
+  border-left: none !important;
+}
+.filavBottom_links li {
+  display: inline;
+  margin: 0px 30px 20px 0px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.filavBottom_links a {
+  text-decoration: none;
+  color: #6d7c83 !important;
+  letter-spacing: 0.5px;
+}
+
+.filavBottom_links a:hover {
+  border-bottom: solid 3px rgb(234, 75, 121);
+  transform: scaleX(1);
+  transition: 250ms ease-in-out;
+}
+.filavBottom_links {
+  display: flex;
+  justify-content: center;
+}
+.filavBottom {
+  border: 1px solid rgb(209, 206, 206);
+  width: 90%;
+  margin: auto;
+  /* border-radius: 15px; */
+  height: 70px;
+}
+.filavBottom > ul {
+  margin-left: 50px;
+}
+.filavBottom_links li {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* fon */
+  /* font-family: "Josefin Sans", sans-serif; */
+  /* display: inline; */
+  /* margin:0px 30px 20px 0px; */
+  /* font-size: 16px;
+  font-weight: 600; */
+}
+
+.filavBottom_links a:hover {
+  border-bottom: solid 3px rgb(234, 75, 121);
+  transform: scaleX(1);
+  transition: 250ms ease-in-out;
+}
+.filavBottom_links {
+  display: flex;
+  justify-content: center;
+}
+.fildropLink {
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.fildropdown > li {
+  margin-left: 55px;
+  margin-top: 15px;
+}
+
+.fildropdown-content {
+  display: none;
+  position: absolute;
+  /* width: 100%; */
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 5px;
+  z-index: 12;
+}
+/* .shopCategorie{
+margin-left: -150px;
+} */
+
+.fildropdown-content a {
+  width: 200px;
+  height: 30px;
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+  /* font-family: "Roboto", sans-serif; */
+}
+
+.fildropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: rgb(234, 75, 121);
+}
+
+.fildropdown:hover .fildropdown-content {
+  display: block;
+}
+
+.fildropdown:hover .dropbtn {
+  /* background-color: #3e8e41; */
+  border-bottom: solid 3px rgb(234, 75, 121);
+  transform: scaleX(1);
+  transition: 250ms ease-in-out;
+}
+
+.filproducts-menu-dropDown-links li {
+  /* display: inline; */
+  /* margin:0px 30px 20px 0px; */
+  font-size: 15px;
+  font-weight: 600;
+  width: 200px;
+}
+.filproducts-menu-dropDown-links a {
+  text-decoration: none;
+  color: black;
+}
+.filproducts-menu-dropDown-links a:hover {
+  border-bottom: solid 3px rgb(234, 75, 121);
+  transform: scaleX(1);
+  transition: 250ms ease-in-out;
+}
+.fildrop-down-link-container-of-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+/* AllProducts End */
+
+/* -------------------------------------------------------------------- */
+
+</style>
+</head>
+<body>
+  <div class="filavBottom">
+    <ul class="filavBottom_links">
+      <div class="fildropdown dddForRemoveLeftLine">
+      <div class="fildropLink">
+        <li><a href=""> Brands <i class="fas fa-sort-down"></i></i></a></li> 
+      </div>
+        <div class="fildropdown-content ">
+          <div class="filproducts-menu-dropDown">
+               <ul class="filproducts-menu-dropDown-links">
+                  <li onclick="brandDisplay1()"><a>Lakme</a></li>
+                 
+                 <!-- <div class="makeup-content">
+                     <div class="makeup-menu-dropdown">
+                       <ul class="makeup-manu-dropDown-links">
+                           <li> <a href="">test</a></li>
+                           <li> <a href="">test2</a></li>
+                       </ul>
+                     </div>
+                 </div> -->
+                 <li onclick="brandDisplay2()"><a>wow</a></li>
+                 <li onclick="brandDisplay3()"><a >mama Earth</a></li>
+                 <li onclick="brandDisplay4()"><a >Good Vibes</a></li>
+               </ul>
+             </div>
+          </div>
+      </div>
+      
+      <div class="fildropdown">
+        <div class="fildropLink">
+          <li><a href="">Price Range  <i class="fas fa-sort-down"></i></a></li>
+        </div>
+        <div class="fildropdown-content brands">
+          <div class="filproducts-menu-dropDown ">
+               <ul class="filproducts-menu-dropDown-links">
+               <li onclick="priceRange()"><a>100rs-200rs</a></li>
+                <li onclick="priceRange1()"><a>200rs-300rs</a></li>
+                <li onclick="priceRange2()"><a>300rs & above</a></li>
+               </ul>
+             </div>
+          </div>
+      </div>
+      <div class="fildropdown">
+       <div class="fildropLink">
+        <li><a href="">Discounts  <i class="fas fa-sort-down"></i></i></a></li>
+       </div>
+        <div class="fildropdown-content brands">
+          <div class="filproducts-menu-dropDown brandsImages">
+               <ul class="filproducts-menu-dropDown-links">
+                <li onclick="discountRange()"><a>10%-20%</a></li>
+                <li onclick="discountRange1()"><a>20%-30%</a></li>
+               </ul>
+             </div>
+          </div>
+      </div>
+     
+      <div class="fildropdown">
+       <div class="fildropLink">
+        <li><a href="">Sort By Relevance  <i class="fas fa-sort-down"></i></a></li> 
+       </div>
+        <div class="fildropdown-content brands">
+          <div class="filproducts-menu-dropDown brandsImages">
+               <ul class="filproducts-menu-dropDown-links">
+              <li onclick="sortHIghTOLow()"><a>High to low</a></li>
+               <li  onclick="sortLowTOHigh()"><a>low to high</a></li>
+               </ul>
+             </div>
+          </div>
+      </div>
+    </ul>
+  </div>
+
+
+</body>
+</html>
+<style>
+ 
+
+
+
